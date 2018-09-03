@@ -46,7 +46,7 @@ module FE
             @location.build_xml(xml) if @location.present?
             @phone.build_xml(xml) if @phone.present?
             @fax.build_xml(xml) if @fax.present?
-            xml.CorreElectronico @email if @email.present?
+            xml.CorreoElectronico @email if @email.present?
           end          
         end
         
