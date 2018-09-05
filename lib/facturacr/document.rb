@@ -42,7 +42,7 @@ module FE
     attr_accessor :serial, :date, :issuer, :receiver, :condition, :credit_term, 
                   :payment_type, :service_type, :reference_information, 
                   :regulation, :number, :document_type, :security_code, 
-                  :items, :references, :namespaces, :summary, :document_situation, :headquarters, :terminal
+                  :items, :references, :namespaces, :summary, :document_situation, :headquarters, :terminal, :others
     
     validates :date, presence: true
     validates :number, presence: true
@@ -124,6 +124,9 @@ module FE
         end
         
         regulation.build_xml(xml)
+        xml.Otros{
+          xml.OtroTexto @others
+        }
       end
       
       builder
