@@ -15,6 +15,7 @@ module FE
       @credit_term = args[:credit_term]
       @summary = args[:summary]
       @regulation = args[:regulation] ||= FE::Document::Regulation.new
+      @others = args[:others]
       @security_code = args[:security_code]
       @document_situation = args[:document_situation]
       @references = args[:references]
