@@ -7,7 +7,7 @@ module FE
                     :discount, :discount_reason, :subtotal, :taxes, :net_total
                     
       validates :line_number, presence: true
-      validates :quantity, presence: true, numericality: {greater_than: 0}
+      validates :quantity, presence: true
       validates :unit, presence: true
       validates :description, presence: true, length: {maximum: 160 }
       validates :unit_price, presence: true
