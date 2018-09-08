@@ -124,9 +124,13 @@ module FE
         end
         
         regulation.build_xml(xml)
+        
+        if @others.present?
         xml.Otros{
           xml.OtroTexto @others
         }
+        end
+        
       end
       
       builder
