@@ -39,7 +39,7 @@ module FE
           node.Emisor do |xml|
             xml.Nombre @name
             identification_document.build_xml(xml)
-            xml.NombreComercial @comercial_name if @comercial_name
+            xml.NombreComercial @comercial_name if @comercial_name.present?
             location.build_xml(xml)
             phone.build_xml(xml) if phone.present?
             fax.build_xml(xml) if fax.present?
