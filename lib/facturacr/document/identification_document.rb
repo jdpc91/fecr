@@ -20,7 +20,7 @@ module FE
           
           @document_type = args[:type]
           @raw_id_number = args[:number]
-          @id_number = "%012d" % args[:number]
+          @id_number = "%012d" % args[:number].to_i
           
         end
         
