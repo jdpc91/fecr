@@ -111,7 +111,7 @@ module FE
         "01"
       elsif id_number.to_i.to_s.size == 10
         "02"
-      elsif id_number.to_i.to_S.size == 11
+      elsif id_number.to_i.to_s.size == 11
         "03"
       end
     end
