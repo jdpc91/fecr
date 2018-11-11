@@ -31,7 +31,8 @@ module FE
         
     def send_document(payload)
       authenticate    
-      response = RestClient.post "#{@document_endpoint}/recepcion", payload.to_json, {:Authorization=> "bearer #{@token}", content_type: :json}
+      #response = RestClient.post "#{@document_endpoint}/recepcion", payload.to_json, {:Authorization=> "bearer #{@token}", content_type: :json}    
+      response = RestClient::Request.execute(:method => :post, :url => "#{@document_endpoint}/recepcion", :payload => payload.to_json, :timeout => 20, :headers => {:Authorization=> "bearer #{@token}", content_type: :json})
       if response.code.eql?(200) || response.code.eql?(202)
         @check_location = response.headers[:location]
         puts "CheckLocation: #{@check_location}"
