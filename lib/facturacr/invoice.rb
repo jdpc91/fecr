@@ -5,11 +5,11 @@ module FE
   class Invoice < Document
     
     def initialize(args={})
+      @activity_code = args[:activity_code]
       @date = args[:date]
       @issuer = args[:issuer]
       @receiver = args[:receiver]
       @items = args[:items]
-      @other_charges = args[:other_charges]
       @number = args[:number]
       @condition = args[:condition]
       @payment_type = args[:payment_type] || "01"
@@ -18,6 +18,7 @@ module FE
       @summary = args[:summary]
       @regulation = args[:regulation] ||= FE::Document::Regulation.new
       @others = args[:others]
+      @other_charges = args[:other_charges]
       @security_code = args[:security_code]
       @document_situation = args[:document_situation]
       @namespaces = {
