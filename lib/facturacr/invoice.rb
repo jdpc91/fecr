@@ -9,6 +9,7 @@ module FE
       @issuer = args[:issuer]
       @receiver = args[:receiver]
       @items = args[:items]
+      @other_charges = args[:other_charges]
       @number = args[:number]
       @condition = args[:condition]
       @payment_type = args[:payment_type] || "01"
@@ -22,7 +23,7 @@ module FE
       @namespaces = {
         "xmlns:xsi"=>"http://www.w3.org/2001/XMLSchema-instance", 
         "xmlns:xsd"=>"http://www.w3.org/2001/XMLSchema",
-        "xmlns"=>"https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica"#,
+        "xmlns"=>"https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronica"#,
         #"xsi:schemaLocation"=>"https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica.xsd"
       }
     end
