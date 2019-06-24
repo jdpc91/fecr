@@ -15,7 +15,7 @@ module FE
         validates :county, presence: true, length: { is: 2 }
         validates :district, presence: true, length: { is: 2 }
         validates :neighborhood, length: { is: 2 }, allow_blank: true
-        validates :others, presence: true, length: { maximum: 160 }
+        validates :others, presence: true, length: { maximum: 250 }
         
         def initialize(args={})
           
