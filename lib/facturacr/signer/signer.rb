@@ -25,11 +25,11 @@ module FE
     SIGNATURE_POLICY = "https://tribunet.hacienda.go.cr/docs/esquemas/2016/v4/Resolucion%20Comprobantes%20Electronicos%20%20DGT-R-48-2016.pdf"
     
     XMLNS_MAP = {
-      "FacturaElectronica" => "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica",
-      "NotaCreditoElectronica" => "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/notaCreditoElectronica",
-      "TiqueteElectronico" => "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/tiqueteElectronico",
-      "NotaDebitoElectronica" => "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/notaDebitoElectronica",
-      "MensajeReceptor" => "https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/mensajeReceptor"
+      "FacturaElectronica" => "https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/facturaElectronica",
+      "NotaCreditoElectronica" => "https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/notaCreditoElectronica",
+      "TiqueteElectronico" => "https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/tiqueteElectronico",
+      "NotaDebitoElectronica" => "https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/notaDebitoElectronica",
+      "MensajeReceptor" => "https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/mensajeReceptor"
     }   
     
     def initialize(args = {})
