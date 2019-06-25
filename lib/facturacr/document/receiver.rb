@@ -11,7 +11,7 @@ module FE
         
         attr_accessor :name, :identification_document,:foreign_id_number, :foreign_others, :comercial_name, :location, :phone, :fax, :email
         
-        validates :name, presence: true, length: { maximum: 80 }
+        validates :name, presence: true, length: { maximum: 100 }
         validates :comercial_name, length: { maximum: 80 }
         validates :foreign_id_number, length: { maximum: 20 }
         validates :foreign_others, length: { maximum: 300 }
