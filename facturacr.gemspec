@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'facturacr/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "facturacr"
+  spec.name          = "fecr"
   spec.version       = FE::VERSION
-  spec.authors       = ["Josef Sauter"]
-  spec.email         = ["Josef.Sauter@gmail.com"]
+  spec.authors       = ["Josef Sauter", "Jose Daniel Perez"]
+  spec.email         = ["Josef.Sauter@gmail.com", "jdpc91@gmail.com"]
 
   spec.summary       = %q{Facturación Electrónica de Costa Rica}
-  spec.homepage      = "https://github.com/apokalipto/facturacr"
+  spec.homepage      = "https://github.com/jdpc91/fecr"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
